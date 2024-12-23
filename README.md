@@ -1,5 +1,5 @@
-# tls-iiot
-I wanted to learn how secure TLS communcation is setup and used.  Moreover, being that I am studying cyber-physical systems (CPSs) and how to secure them, I aimed to make it incorporate a model demonstrating communication for an industrial internet of things (IIoT) device. 
+# Cyber-Physical Systems: Transport Layer Security and Industrial Internet of Things 
+I wanted to learn how secure transport layer security (TLS) communcation is setup and used.  Moreover, being that I am studying cyber-physical systems (CPSs) and how to secure them, I aimed to make it incorporate a model demonstrating communication for an industrial internet of things (IIoT) device. 
 
 The Python script models a secure TLS communication between an IIoT device (client) and a control server. The server listens for incoming TLS connections on port 8443, authenticates itself using a self-signed certificate, and securely exchanges data with clients. Upon receiving data from the client, the server prints the received message and sends an acknowledgment. The IIoT device (client) simulates a sensor that periodically sends encrypted sensor data (e.g., pressure readings) to the server over a TLS connection, ensuring the confidentiality and integrity of the data. After sending data, the client waits for a response from the server before closing the connection.
 
