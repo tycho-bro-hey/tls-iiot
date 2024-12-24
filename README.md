@@ -26,6 +26,23 @@ The **OSI (Open Systems Interconnection)** model is a conceptual framework used 
 | 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.         | TCP, UDP                             |
 | 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                                 | IP, ICMP, ARP, OSPF                  |
 | 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.                 | Ethernet, Wi-Fi, PPP, MAC Address    |
-| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium (e.g., cables, radio waves).                   | Ethernet cables, fiber optics, hubs  |
+| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium.                   | Ethernet cables, fiber optics, hubs  |
+
+---
+
+**Transport Layer Security (TLS)** operates at the **Transport Layer (Layer 4)** of the OSI model, securing data transmission between a client and a server by encrypting and authenticating communication. Below is an explanation of how TLS works and its relationship to the OSI layers.
+
+#### TLS Handshake in OSI Context
+
+| **OSI Layer**       | **Role in the TLS Handshake**                                                                                       |
+|----------------------|---------------------------------------------------------------------------------------------------------------------|
+| **Application (7)**  | Initiates a secure connection request (e.g., HTTPS) and processes the transmitted data after decryption.           |
+| **Session (5)**      | Manages session setup and ensures that the client and server agree on the security parameters.                     |
+| **Transport (4)**    | Performs the handshake and establishes an encrypted channel for transmitting application data.                     |
+
+---
+
+#### Post-Handshake Data Transmission
+Once the handshake is complete, the session key is used for symmetric encryption of data. The encrypted data is encapsulated in transport layer packets and transmitted through the lower layers (network, data link, and physical).
 
 ---
