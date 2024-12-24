@@ -13,4 +13,19 @@ Transport Layer Security is a crypographic protocol that ensures secure communic
 - and authentication: verifies the identity of the communicating parties using certificates.
 
 ### How TLS Works - Using the OSI Model
-TBD
+
+The **OSI (Open Systems Interconnection)** model is a conceptual framework used to understand and implement network communication. It divides communication into seven distinct layers, each with specific roles and functions.
+
+---
+
+| **Layer Number** | **Layer Name**         | **Description**                                                                                   | **Examples**                          |
+|-------------------|------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------|
+| 7                 | **Application Layer** | Interfaces with user applications to provide network services like data transfer and resource sharing. | HTTP, FTP, SMTP, DNS, SSH            |
+| 6                 | **Presentation Layer**| Translates, encrypts, and compresses data to ensure it is readable for the application layer.      | SSL/TLS, JPEG, GIF, ASCII            |
+| 5                 | **Session Layer**     | Establishes, maintains, and terminates communication sessions between applications.               | NetBIOS, RPC, PPTP                   |
+| 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.         | TCP, UDP                             |
+| 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                                 | IP, ICMP, ARP, OSPF                  |
+| 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.                 | Ethernet, Wi-Fi, PPP, MAC Address    |
+| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium (e.g., cables, radio waves).                   | Ethernet cables, fiber optics, hubs  |
+
+---
