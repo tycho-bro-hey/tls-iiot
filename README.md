@@ -18,16 +18,16 @@ The **OSI (Open Systems Interconnection)** model is a conceptual framework used 
 
 ---
 
-| **Layer Number** | **Layer Name**         | **Description**                                                                                   | 
-|-------------------|------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------|
-| 7                 | **Application Layer** | Interfaces with user applications to provide network services like data transfer and resource sharing. 
-| 6                 | **Presentation Layer**| Translates, encrypts, and compresses data to ensure it is readable for the application layer.      | 
-| 5                 | **Session Layer**     | Establishes, maintains, and terminates communication sessions between applications.               | 
-| 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.                                    |
-| 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                                               |
-| 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.                   |
-| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium.                   |
+| **Layer Number** | **Layer Name**         | **Description**                                                                               |
+|-------------------|------------------------|-----------------------------------------------------------------------------------------------|
+| 7                 | **Application Layer** | Interfaces with user applications to provide network services like data transfer and resource sharing. |
+| 6                 | **Presentation Layer**| Translates, encrypts, and compresses data to ensure it is readable for the application layer.  |
+| 5                 | **Session Layer**     | Establishes, maintains, and terminates communication sessions between applications.           |
+| 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.     |
+| 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                             |
+| 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.             |
+| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium.                                           |
+
 
 ---
-
 Even though the term **transport** is in the name, there is not a single layer that describes the mechanisms in TLS.  Moreover, because the OSI model is an abstract, conceptional mapping of network communication, it may be outdated, according to several sources. 
