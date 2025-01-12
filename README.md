@@ -14,35 +14,20 @@ Transport Layer Security is a crypographic protocol that ensures secure communic
 
 ### How TLS Works - Using the OSI Model
 
-The **OSI (Open Systems Interconnection)** model is a conceptual framework used to understand and implement network communication. It divides communication into seven distinct layers, each with specific roles and functions.
+The **OSI (Open Systems Interconnection)** model is a conceptual framework used to understand and implement network communication. It divides communication into seven distinct layers, each with specific roles and functions. 
 
 ---
 
-| **Layer Number** | **Layer Name**         | **Description**                                                                                   | **Examples**                          |
+| **Layer Number** | **Layer Name**         | **Description**                                                                                   | 
 |-------------------|------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------|
-| 7                 | **Application Layer** | Interfaces with user applications to provide network services like data transfer and resource sharing. | HTTP, FTP, SMTP, DNS, SSH            |
-| 6                 | **Presentation Layer**| Translates, encrypts, and compresses data to ensure it is readable for the application layer.      | SSL/TLS, JPEG, GIF, ASCII            |
-| 5                 | **Session Layer**     | Establishes, maintains, and terminates communication sessions between applications.               | NetBIOS, RPC, PPTP                   |
-| 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.         | TCP, UDP                             |
-| 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                                 | IP, ICMP, ARP, OSPF                  |
-| 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.                 | Ethernet, Wi-Fi, PPP, MAC Address    |
-| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium.                   | Ethernet cables, fiber optics, hubs  |
+| 7                 | **Application Layer** | Interfaces with user applications to provide network services like data transfer and resource sharing. 
+| 6                 | **Presentation Layer**| Translates, encrypts, and compresses data to ensure it is readable for the application layer.      | 
+| 5                 | **Session Layer**     | Establishes, maintains, and terminates communication sessions between applications.               | 
+| 4                 | **Transport Layer**   | Ensures reliable delivery of data with error detection, retransmission, and flow control.                                    |
+| 3                 | **Network Layer**     | Manages routing and forwarding of data across different networks.                                               |
+| 2                 | **Data Link Layer**   | Handles node-to-node communication, error detection, and framing of data packets.                   |
+| 1                 | **Physical Layer**    | Transmits raw binary data over the physical medium.                   |
 
 ---
 
-**Transport Layer Security (TLS)** operates at the **Transport Layer (Layer 4)** of the OSI model, securing data transmission between a client and a server by encrypting and authenticating communication. Below is an explanation of how TLS works and its relationship to the OSI layers.
-
-#### TLS Handshake in OSI Context
-
-| **OSI Layer**       | **Role in the TLS Handshake**                                                                                       |
-|----------------------|---------------------------------------------------------------------------------------------------------------------|
-| **Application (7)**  | Initiates a secure connection request (e.g., HTTPS) and processes the transmitted data after decryption.           |
-| **Session (5)**      | Manages session setup and ensures that the client and server agree on the security parameters.                     |
-| **Transport (4)**    | Performs the handshake and establishes an encrypted channel for transmitting application data.                     |
-
----
-
-#### Post-Handshake Data Transmission
-Once the handshake is complete, the session key is used for symmetric encryption of data. The encrypted data is encapsulated in transport layer packets and transmitted through the lower layers (network, data link, and physical).
-
----
+Even though the term **transport** is in the name, there is not a single layer that describes the mechanisms in TLS.  Moreover, because the OSI model is an abstract, conceptional mapping of network communication, it may be outdated, according to several sources. 
